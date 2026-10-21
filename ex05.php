@@ -1,26 +1,20 @@
 <?php
-
     $moyenne = 16; 
 
-    echo"<h3>Affichage de la mention</p>";
+    echo "<h3>Affichage de la mention</h3>";
 
     if ($moyenne < 0 || $moyenne > 20) {
         echo "<p>Note invalide</p>";
-    } 
-    else {
+    } else {
         if ($moyenne < 10) {
             echo "<p>Non validé</p>";
-        } 
-        elseif ($moyenne < 12) {
+        } elseif ($moyenne < 12) {
             echo "<p>Passable</p>";
-        } 
-        elseif ($moyenne < 14) {
+        } elseif ($moyenne < 14) {
             echo "<p>Assez bien</p>";
-        } 
-        elseif ($moyenne < 16) {
+        } elseif ($moyenne < 16) {
             echo "<p>Bien</p>";
-        } 
-        else {
+        } else {
             echo "<p>Très bien</p>";
         }
     }
